@@ -1,4 +1,6 @@
 package notepad.app.persistence.fakeDB;
 
-public class NotesData {
+import notepad.app.persistence.INotes;
+
+public class NotesData implements INotes {
 }
