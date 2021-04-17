@@ -12,4 +12,9 @@ public class NotesData implements INotes {
     {
         notes = new ArrayList<>();
     }
+
+    @Override
+    public List<Note> getAllNotes() {
+        return null;
+    }
 }
