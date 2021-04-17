@@ -1,4 +1,4 @@
 package notepad.app.objects;
 
-public class Notes {
+public class Note{
 }
