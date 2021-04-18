@@ -30,7 +30,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent myIntent = new Intent(MainActivity.this,NotesMenu.class);
                 myIntent.putExtra("TeamName", "local");
-
+              //  System.out.println("click");
+                MainActivity.this.startActivity(myIntent);
             }
         });
     }
