@@ -43,19 +43,22 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NotesViewHol
         return notes.size();
     }
 
-    public class NotesViewHolder extends RecyclerView.ViewHolder implements RecyclerEventListener {
+    public class NotesViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener  {
         TextView title;
         TextView dateCreated;
         public NotesViewHolder(@NonNull View itemView) {
             super(itemView);
             title = itemView.findViewById(R.id.notesTitle);
             dateCreated = itemView.findViewById(R.id.dateCreated);
+           itemView.setOnClickListener(this);
         }
 
+
+
         @Override
-        public void onClick(int pos) {
+        public void onClick(View v) {
             listener.onClick(getAdapterPosition());
-            System.out.println("cick");
+         //   System.out.println("click");
         }
     }
 }

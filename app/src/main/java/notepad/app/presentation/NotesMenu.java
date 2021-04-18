@@ -41,7 +41,7 @@ public class NotesMenu extends AppCompatActivity {
         listener = new RecyclerEventListener() {
             @Override
             public void onClick(int pos) {
-                System.out.println("click");
+                System.out.println("click activity");
             }
         };
     }
