@@ -4,14 +4,11 @@ import notepad.app.persistence.INotes;
 import notepad.app.persistence.fakeDB.NotesData;
 
 public class Services {
-    private static boolean useFakeDB;
+    private static boolean useFakeDB=true;
     private boolean useLocalDB;
     private static INotes notesPersistance ;
-    public Services(boolean useLocalDB,boolean useFakeDB)
-    {
-        this.useLocalDB=useLocalDB;
-        this.useFakeDB=useFakeDB;
-    }
+
+
 
     public static synchronized INotes getNotesPersistance()
     {
