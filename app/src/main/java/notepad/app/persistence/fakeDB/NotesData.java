@@ -11,10 +11,13 @@ public class NotesData implements INotes {
     public NotesData()
     {
         notes = new ArrayList<>();
+        for (int i = 0; i < 7; i++) {
+            notes.add(i,new Note());
+        }
     }
 
     @Override
     public List<Note> getAllNotes() {
-        return null;
+        return notes;
     }
 }
