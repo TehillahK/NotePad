@@ -14,6 +14,7 @@ public class Note{
        // createdDate.setTime();
         title="some title";
         postID="nl";
+        userNote="lol";
     }
 
     public String getPostID() {

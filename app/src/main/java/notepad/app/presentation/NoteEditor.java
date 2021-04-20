@@ -30,7 +30,7 @@ public class NoteEditor extends AppCompatActivity {
         {
             noteID=extras.getString("noteID");
             note = accessNotes.getNote(noteID);
-        //    setNote();
+            setNote();
         }
 
 
