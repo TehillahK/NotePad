@@ -31,6 +31,7 @@ public class NotesMenu extends AppCompatActivity {
         // A Dev task for the future should be to develop a screen to display if teams is null.
         // Activate Layout manager and RecyclerView
 
+        //I wrote something here
         rv.setLayoutManager(llm);
         setOnClickListener();
         adapter = new NotesAdapter(notes,listener);
