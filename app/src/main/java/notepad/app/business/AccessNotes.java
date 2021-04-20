@@ -12,10 +12,10 @@ public class AccessNotes {
     public AccessNotes()
     {
         iNotes= Services.getNotesPersistance();
+        notes=iNotes.getAllNotes();
     }
     public List<Note> getAllNotes()
     {
-        notes=iNotes.getAllNotes();
         return notes;
     }
     public Note getNote(String noteID)
