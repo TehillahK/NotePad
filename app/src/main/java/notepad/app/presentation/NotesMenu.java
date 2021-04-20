@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import java.util.List;
@@ -41,7 +42,10 @@ public class NotesMenu extends AppCompatActivity {
         listener = new RecyclerEventListener() {
             @Override
             public void onClick(int pos) {
-                System.out.println("click activity");
+                Intent myIntent = new Intent(NotesMenu.this,NoteEditor.class);
+                myIntent.putExtra("noteID", notes.get(pos).getPostID());
+                //  System.out.println("click");
+                NotesMenu.this.startActivity(myIntent);
             }
         };
     }

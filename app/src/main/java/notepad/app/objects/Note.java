@@ -3,6 +3,7 @@ package notepad.app.objects;
 import java.util.Date;
 
 public class Note{
+    private String postID;
     private String title;
     private String userNote;
     private Date createdDate;
@@ -12,6 +13,11 @@ public class Note{
     {
        // createdDate.setTime();
         title="some title";
+        postID="nl";
+    }
+
+    public String getPostID() {
+        return postID;
     }
 
     public String getTitle() {
@@ -21,5 +27,9 @@ public class Note{
     public String getCreatedDate()
     {
         return "";
+    }
+
+    public String getUserNote() {
+        return userNote;
     }
 }

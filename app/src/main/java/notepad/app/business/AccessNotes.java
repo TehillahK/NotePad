@@ -18,4 +18,17 @@ public class AccessNotes {
         notes=iNotes.getAllNotes();
         return notes;
     }
+    public Note getNote(String noteID)
+    {
+        Note result=null;
+        Note note=null;
+        for (int i = 0; i < notes.size(); i++) {
+            note=notes.get(i);
+            if(note.getPostID().equals(noteID))
+            {
+                result=note;
+            }
+        }
+        return result;
+    }
 }
